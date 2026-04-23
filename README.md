@@ -44,7 +44,7 @@ flowchart TD
     F -->|TCP| G[Log TCP src/dst/port]
     F -->|UDP| H[Log UDP src/dst/port]
     F -->|Other| I[Log ICMP / Default]
-    B -->|PacketOut (FLOOD)| A
+    B -->|PacketOut FLOOD| A
     B --> J[Append to log.txt]
 ```
 
